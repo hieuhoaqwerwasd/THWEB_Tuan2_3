@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 2: Hình ảnh & Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        img {
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            max-width: 100%;
+        }
+        figcaption {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+        }
+
+        audio {
+            display: block;
+            margin: 10px auto 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 5px;
+            background: white;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .project {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Phần 2: Làm việc với hình ảnh & Media</h1>
+
+    <p>Hiển thị ảnh đại diện và mô tả ảnh đại diện</p>
+    <img src="./img/conmeo.jfif" alt="Ảnh đại diện">
+    <figcaption>Ảnh đại diện của tôi - Một chú mèo</figcaption>
+
+    <h2>Thư viện ảnh</h2>
+    <div class="gallery">
+        <img src="./img/pexels-akos-szabo-145938-440731.jpg" alt="">
+        <img src="./img/pexels-bri-schneiter-28802-346529.jpg" alt="">
+        <img src="./img/pexels-eberhardgross-691668.jpg" alt="">
+        <img src="./img/pexels-pixabay-158063.jpg" alt="">
+        <img src="./img/pexels-pixabay-247599.jpg" alt="">
+        <img src="./img/pexels-pixabay-355465.jpg" alt="">
+    </div>
+
+    <h2>Chèn video YouTube vào trang web</h2>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+    <h2>Chèn một file audio mp3 vào trang</h2>
+    <audio controls>
+        <source src="./audio/SaintoneEmVippi.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát audio.
+    </audio>
+
+    <h2>Tạo trang portfolio cá nhân</h2>
+    <div class="portfolio">
+        <div class="project">
+            <img src="./img/conmeo.jfif" alt="">
+            <h3>Dự án 1</h3>
+            <p>Website giới thiệu bản thân</p>
+            <a href="https://github.com/hieuhoaqwerwasd/HTCN-Web" target="_blank">Xem GitHub</a>
+        </div>
+        <div class="project">
+            <img src="./img/pexels-quang-nguyen-vinh-222549-2166711.jpg" alt="">
+            <h3>Dự án 2</h3>
+            <p>Trang bán hàng điện thoại</p>
+            <a href="#">Xem chi tiết</a>
+        </div>
+        <div class="project">
+            <img src="./img/pexels-souvenirpixels-417074.jpg" alt="">
+            <h3>Dự án 3</h3>
+            <p>Trang tin tức cá nhân</p>
+            <a href="#">Xem chi tiết</a>
+        </div>
+    </div>
+</body>
+</html>

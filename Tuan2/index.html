@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Bản Thân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(101, 153, 155);
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: #050505;
+        }
+
+        p {
+            color: #353030;
+            font-size: 18px;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        ul.monhocyeuthich {
+            list-style-type: none;
+            padding: 0;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        ul.monhocyeuthich li {
+            padding: 5px;
+            margin: 10px;
+            background-color: #644996;
+            color: white;
+        }
+
+        ul.monhocyeuthich li:nth-child(odd) {
+            background-color: #90915d;
+        }
+
+        ul.monhocyeuthich li:hover {
+            background-color: #b2d8d8;
+            color: black;
+        }
+
+        table {
+            margin: 20px auto;
+            width: 50%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #d8b3b3;
+        }
+
+        tr:nth-child(even) {
+            background-color: #89c8e6;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #86b884;
+            width: 300px;
+            padding: 15px;
+            margin: 20px auto;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 90%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        ul.nav {
+            list-style: none;
+            padding: 0;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        ul.nav li a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        ul.nav li a:hover {
+            color: #ff6600;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Giới Thiệu Bản Thân</h1>
+    <p>Xin chào! Tôi là Hiếu Hoà, đây là một trang web giới thiệu về bản thân tôi.</p>
+    <p>Sinh ngày 22 tháng 3 năm 2005.</p>
+    <p>Ảnh đại diện</p>
+
+    <img src="./img/conmeo.jfif" alt="Mô tả hình ảnh">
+
+    <p>Sở thích: Nghe nhạc, xem phim, chơi game.</p>
+    <p>Mô tả ngắn: Tôi là một người bình thuờng.</p>
+
+    <h1>Danh sách các môn học yêu thích</h1>
+    <ul class="monhocyeuthich">
+        <li>Toán</li>
+        <li>Tiếng Anh</li>
+    </ul>
+
+    <h2>Thời Khóa Biểu</h2>
+    <table>
+        <tr>
+            <th>Thứ</th>
+            <th>Môn học</th>
+            <th>Giờ học</th>
+            <th>Phòng học</th>
+        </tr>
+        <tr>
+            <td>Thứ 2</td>
+            <td>Toán</td>
+            <td>7:00 - 8:30</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Thứ 3</td>
+            <td>Tiếng Anh</td>
+            <td>8:45 - 9:30</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <h3>Form đăng ký cá nhân</h3>
+    <form action="#" method="post">
+        <p>
+            Họ và tên:<br>
+            <input type="text" name="ten" required>
+        </p>
+        <p>
+            Email:<br>
+            <input type="email" name="email" required>
+        </p>
+        <p>
+            Số điện thoại:<br>
+            <input type="tel" name="sdt">
+        </p>
+        <p>
+            Giới tính:<br>
+            <input type="radio" name="gioitinh" value="Nam"> Nam
+            <input type="radio" name="gioitinh" value="Nữ"> Nữ
+            <input type="radio" name="gioitinh" value="Khác"> Khác
+        </p>
+        <p>
+            <input type="submit" value="Gửi">
+        </p>
+    </form>
+
+    <h4>Liên kết điều hướng</h4>
+    <ul class="nav">
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+    </ul>
+
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Cảm ơn bạn đã đăng ký thông tin!");
+            form.reset();
+        });
+    </script>
+</body>
+
+</html>

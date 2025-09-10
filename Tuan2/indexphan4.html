@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần 4: Dự án nhỏ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+
+        .shop {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+        .card img {
+            width: 200px;
+            border-radius: 10px;
+        }
+        .buy-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .buy-btn:hover {
+            background-color: #45a049;
+        }
+
+        .travel {
+            text-align: left;
+            background-color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .travel img {
+            width: 500px;
+            border-radius: 10px;
+        }
+        .travel iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+            margin-top: 10px;
+        }
+
+        .news {
+            text-align: left;
+            background-color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .news img {
+            width: 500px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .news img:hover {
+            transform: scale(1.05);
+        }
+
+        .events {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .events li {
+            list-style: none;
+            margin: 5px 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .events li:nth-child(odd) {
+            background-color: #d8f3dc;
+        }
+        .events li:nth-child(even) {
+            background-color: #ffe5d9;
+        }
+        .events li.highlight {
+            background-color: #ffcccb;
+            font-weight: bold;
+        }
+
+        .cv {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .cv-left {
+            background-color: #d0ebff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .cv-right {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phần 4: Dự án nhỏ</h1>
+
+    <h2>🛒 Trang bán hàng điện thoại</h2>
+    <div class="shop">
+        <div class="card">
+            <img src="./img/iphone-17-pro-256-gb.png" alt="Iphone 17 Pro">
+            <h3>phone 17 Pro</h3>
+            <p>Giá: 5,000,000đ</p>
+            <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="card">
+            <img src="./img/iphone_air-3_3.jpg" alt="Iphone Air">
+            <h3>Iphone Air</h3>
+            <p>Giá: 7,500,000đ</p>
+            <a href="#" class="buy-btn">Mua ngay</a>
+        </div>
+    </div>
+
+    <h2>🏝 Trang thông tin du lịch</h2>
+    <div class="travel">
+        <h3>Đà Nẵng - Thành phố biển xinh đẹp</h3>
+        <img src="./img/download.jpg" alt="Đà Nẵng">
+        <p>Đà Nẵng là một trong những điểm đến du lịch nổi tiếng nhất Việt Nam với biển Mỹ Khê, Bà Nà Hills và Cầu Rồng.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.415973297227!2d108.202167!3d16.066555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c1c2f1f0a9%3A0xe26e6f7b5b93915b!2zxJDDoCBO4bqhbmc!5e0!3m2!1svi!2s!4v1700000000000"></iframe>
+    </div>
+
+    <h2>📰 Trang tin tức</h2>
+    <div class="news">
+        <h3>Hà Nội mưa lớn kéo dài</h3>
+        <img src="./img/pexels-pixabay-355465.jpg" alt="Tin tức">
+        <p>Trong những ngày gần đây, Hà Nội liên tục có mưa lớn, người dân cần chú ý di chuyển cẩn thận để tránh ngập lụt.</p>
+    </div>
+
+    <h2>📅 Trang lịch sự kiện</h2>
+    <ul class="events">
+        <li>10/09/2025 - Khai giảng năm học mới</li>
+        <li class="highlight">15/09/2025 - Hội thảo công nghệ</li>
+        <li>20/09/2025 - Dã ngoại trường</li>
+        <li>25/09/2025 - Cuộc thi lập trình</li>
+    </ul>
+
+    <!-- CV cá nhân -->
+    <h2>📄 CV cá nhân</h2>
+    <div class="cv">
+        <div class="cv-left">
+            <h3>Thông tin</h3>
+            <p>Họ tên: Hiếu Hoà</p>
+            <p>Email: hieuhoa@example.com</p>
+            <p>Điện thoại: 0123456789</p>
+        </div>
+        <div class="cv-right">
+            <h3>Kỹ năng</h3>
+            <p>- HTML, CSS cơ bản</p>
+            <p>- Tin học văn phòng</p>
+            <h3>Học vấn</h3>
+            <p>Trường Đại học XYZ - Công nghệ thông tin</p>
+        </div>
+    </div>
+
+</body>
+</html>
