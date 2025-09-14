@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(#7bb6db, #7bb8e7);
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 1fr 3fr;
+      gap: 5px;
+      padding: 5px;
+    }
+
+    header {
+      grid-area: header;
+      background: #54a6ee;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .form-section {
+      grid-area: menu;
+      color: white;
+      padding: 20px;
+    }
+
+    .form-section form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image-section {
+      grid-area: content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      border: 3px solid white;
+    }
+
+    .image-section h3 {
+      margin-top: 20px;
+      color: darkblue;
+    }
+
+    .image-section p {
+      font-style: italic;
+      color: navy;
+    }
+
+    footer {
+      grid-area: footer;
+      background: #4aa3f0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="logo">Sky World</div>
+    </header>
+
+    <div class="form-section">
+      <h2>Registration information</h2>
+      <p>
+        Start your travel planning right now with our on-line tour registration form. 
+        Just tell us a little about yourself and your group and one of our travel 
+        experts will contact you to create the perfect tour package custom built 
+        for your group's needs.
+      </p>
+      <form>
+        <label>Title</label>
+        <select>
+          <option>Mr.</option>
+          <option>Mrs.</option>
+          <option>Ms.</option>
+        </select>
+
+        <input type="text" placeholder="Full Name *">
+        <input type="text" placeholder="Mailing Address">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Country">
+        <textarea placeholder="Specific questions or requests about your tour"></textarea>
+
+        <div>
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </div>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <img src="./img/sky.png" alt="">
+      <h3>You've arrived.</h3>
+      <p>Journeys as great as the destinations.</p>
+    </div>
+
+    <footer>
+      c 2016 <span>Sky World Tours.</span> All rights reserved. <br>
+      Contact information: <span>Student Name | Student ID</span> | Testing date: <i>16 Sept 2016</i>
+    </footer>
+  </div>
+</body>
+</html>
